@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-def square_matrix_simple(matrix=[]):
-    new_matrix = []
-    for row in matrix:
-        new_row = list(map(lambda x: x ** 2, row))
-        new_matrix.append(new_row)
-    return new_matrix
+def print_list_integer(my_list=[]):
+    """Print all integers of a list, one per line.
+
+    Uses str.format() and does not cast integers to strings.
+    """
+    for i in my_list:
+        print("{:d}".format(i))
